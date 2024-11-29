@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Detector de Phishing</title>
+<style>
+  body { font-family: Arial, sans-serif; }
+  #result { color: red; font-size: 1.2em; }
+</style>
+</head>
+<body>
+  <h1>Detector de Phishing</h1>
+  <input type="text" id="urlInput" placeholder="Pega la URL aquí" size="50">
+  <button onclick="checkURL()">Verificar URL</button>
+  <p id="result"></p>
+
+  <script>
+    function checkURL() {
+      const url = document.getElementById('urlInput').value;
+      document.getElementById('result').textContent = 'Analizando...';
+      // Aquí agregarías la llamada al backend
+    }
+  </script>
+</body>
+</html>
